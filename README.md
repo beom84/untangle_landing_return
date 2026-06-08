@@ -13,17 +13,20 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment Variables
 
-Copy [.env.local.example](/Users/beom/Documents/untangle_landing/untangle_adhd/.env.local.example) to `.env.local` and fill in:
+Copy [.env.local.example](/Users/beom/Documents/untangle_landing/untangle_adhd_v2/.env.local.example) to `.env.local` and fill in:
 
 - `APPS_SCRIPT_URL`: Google Apps Script web app URL for registration and survey writes
 - `NEXT_PUBLIC_AMPLITUDE_API_KEY`: Amplitude browser key
+- `NEXT_PUBLIC_LANDING_VARIANT`: Optional override for the default `v2` variant label
+
+Amplitude events automatically include `landing_variant`, so `page_viewed`, CTA clicks, and registration/survey funnel events can all be segmented by landing version or any explicit override.
 
 ## Google Sheets Integration
 
 The app sends all writes through two server routes:
 
-- [src/app/api/register/route.ts](/Users/beom/Documents/untangle_landing/untangle_adhd/src/app/api/register/route.ts:1)
-- [src/app/api/survey/route.ts](/Users/beom/Documents/untangle_landing/untangle_adhd/src/app/api/survey/route.ts:1)
+- [src/app/api/register/route.ts](/Users/beom/Documents/untangle_landing/untangle_adhd_v2/src/app/api/register/route.ts:1)
+- [src/app/api/survey/route.ts](/Users/beom/Documents/untangle_landing/untangle_adhd_v2/src/app/api/survey/route.ts:1)
 
 Both routes post to the same Apps Script web app.
 
@@ -46,13 +49,14 @@ biggestGap
 surveyCompleted
 surveyCompletedAt
 updatedAt
+variant
 ```
 
 The script will also create or reset these headers automatically.
 
 ### 2. Paste the Apps Script
 
-Use [scripts/google-apps-script/Code.gs](/Users/beom/Documents/untangle_landing/untangle_adhd/scripts/google-apps-script/Code.gs:1) as the contents of your Apps Script project.
+Use [scripts/google-apps-script/Code.gs](/Users/beom/Documents/untangle_landing/untangle_adhd_v2/scripts/google-apps-script/Code.gs:1) as the contents of your Apps Script project.
 
 ### 3. Deploy the Script
 
