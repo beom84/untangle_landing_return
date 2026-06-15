@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./privacy.module.css";
 
-const title = "개인정보 처리방침 | ILDAN";
+const title = "개인정보 처리방침 | Untangle";
 const description =
-  "ILDAN 사전등록 랜딩페이지에 적용되는 개인정보 처리방침입니다.";
+  "Untangle 사전등록 랜딩페이지에 적용되는 개인정보 처리방침입니다.";
 
 export const metadata: Metadata = {
   title,
@@ -95,9 +95,9 @@ export default function PrivacyPage() {
       <div className={styles.shell}>
         <div className={styles.hero}>
           <p className={styles.eyebrow}>Privacy Policy</p>
-          <h1 className={styles.title}>ILDAN 개인정보 처리방침</h1>
+          <h1 className={styles.title}>Untangle 개인정보 처리방침</h1>
           <p className={styles.description}>
-            본 개인정보 처리방침은 ILDAN 사전등록 랜딩페이지에서 수집되는
+            본 개인정보 처리방침은 Untangle 사전등록 랜딩페이지에서 수집되는
             개인정보의 처리 기준을 설명합니다.
           </p>
           <div className={styles.metaRow}>
@@ -153,7 +153,7 @@ export default function PrivacyPage() {
         <section className={styles.section}>
           <h2>3. 개인정보의 제3자 제공</h2>
           <p className={styles.paragraph}>
-            ILDAN은 정보주체의 개인정보를 제1항의 처리 목적 범위에서만
+            Untangle은 정보주체의 개인정보를 제1항의 처리 목적 범위에서만
             처리하며, 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다.
             다만 법령에 특별한 규정이 있거나 정보주체의 별도 동의가 있는 경우는
             예외로 합니다.
@@ -163,7 +163,7 @@ export default function PrivacyPage() {
         <section className={styles.section}>
           <h2>4. 개인정보 처리 위탁 및 국외 이전</h2>
           <p className={styles.paragraph}>
-            ILDAN은 서비스 운영을 위해 아래와 같이 외부 서비스를 이용할 수
+            Untangle은 서비스 운영을 위해 아래와 같이 외부 서비스를 이용할 수
             있으며, 이 과정에서 개인정보가 국외로 이전될 수 있습니다.
           </p>
           <div className={styles.tableWrap}>
@@ -233,7 +233,7 @@ export default function PrivacyPage() {
         <section className={styles.section}>
           <h2>8. 쿠키 및 유사 기술의 이용</h2>
           <p className={styles.paragraph}>
-            ILDAN은 이용 행태 분석과 서비스 품질 개선을 위해 쿠키 또는
+            Untangle은 이용 행태 분석과 서비스 품질 개선을 위해 쿠키 또는
             이와 유사한 기술을 사용할 수 있습니다. 이용자는 브라우저 설정을
             통해 쿠키 저장을 거부하거나 삭제할 수 있으나, 일부 분석 기능이
             제한될 수 있습니다.
@@ -243,7 +243,7 @@ export default function PrivacyPage() {
         <section className={styles.section}>
           <h2>9. 문의 채널</h2>
           <div className={styles.contactCard}>
-            <p>서비스명: ILDAN</p>
+            <p>서비스명: Untangle</p>
             <p>
               문의 채널:{" "}
               <a
